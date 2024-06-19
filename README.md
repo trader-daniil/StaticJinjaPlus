@@ -171,3 +171,11 @@ build
 ![Example of index.html](https://imgur.com/Onr3aVM.jpg)
 Example render of `index.html`
 
+
+## Using Docker
+
+To create image run `docker build <path_to_Dockerfile>`
+
+After creating an image, user command `docker run -v <image_name>:<absolute path_to_folder with templates> <image_id>` to create docker container. Default path to folder with generated templates - `/opt/staticjinjaplus/build` More info about [volumes](https://docs.docker.com/storage/volumes/)
+
+Or you can download image from [repository](https://hub.docker.com/repository/docker/traderdaniil/static-jinja-plus/general)
